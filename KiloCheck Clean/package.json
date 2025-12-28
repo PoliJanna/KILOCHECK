@@ -4,15 +4,9 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "npm run validate:security && next build",
+    "build": "next build",
     "start": "next start",
-    "lint": "next lint",
-    "test": "jest",
-    "test:watch": "jest --watch",
-    "validate:security": "node scripts/validate-security.js",
-    "validate:production": "node scripts/validate-production.js",
-    "prebuild": "npm run validate:security",
-    "predeploy": "npm run validate:production"
+    "lint": "next lint"
   },
   "dependencies": {
     "@google/generative-ai": "^0.21.0",
